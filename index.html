@@ -3,164 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jual&Beli games</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>JUBEGAMES - Jual & Beli Games</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #121212;
-            color: white;
+            background-color: #f5f5f5;
             text-align: center;
         }
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 40px;
-            background-color: rgba(0, 0, 0, 0.9);
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-        }
-        .logo {
-            display: flex;
-            align-items: center;
-        }
-        .logo img {
-            height: 50px;
-            margin-right: 10px;
-        }
-        .nav-links {
-            display: flex;
-        }
-        .nav-links a {
+        header {
+            background: linear-gradient(to right, #ff4d4d, #ff99cc);
+            padding: 40px 20px;
             color: white;
-            text-decoration: none;
-            margin: 0 20px;
+        }
+        .profile img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid white;
+        }
+        h1 {
+            font-size: 32px;
+            margin: 10px 0 5px;
+        }
+        .content {
+            margin: 20px auto;
+            max-width: 800px;
             font-size: 18px;
-            transition: 0.3s;
-        }
-        .nav-links a:hover {
-            color: #ff9800;
-        }
-        .hero {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background: url('https://source.unsplash.com/1600x900/?gaming') no-repeat center center/cover;
-            position: relative;
-        }
-        .hero h1 {
-            font-size: 50px;
-            margin-bottom: 10px;
-        }
-        .hero p {
-            font-size: 20px;
-            margin-bottom: 20px;
-        }
-        .cta-button {
-            background-color: #ff9800;
-            color: white;
-            border: none;
-            padding: 15px 30px;
-            font-size: 18px;
-            cursor: pointer;
-            border-radius: 8px;
-            transition: 0.3s;
-        }
-        .cta-button:hover {
-            background-color: #e68900;
-        }
-        .info-section {
-            padding: 50px 20px;
-            background-color: #1c1c1c;
-        }
-        .game-category {
+            font-weight: bold;
             text-align: left;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        .game-category h3 {
-            color: #ff9800;
-        }
-        .game-list {
-            list-style: none;
-            padding: 0;
-        }
-        .game-list li {
-            background: #282828;
-            margin: 10px 0;
-            padding: 10px;
-            border-radius: 5px;
-        }
-        .note {
-            margin-top: 20px;
-            font-style: italic;
-            color: #bbb;
-        }
-        .footer {
+            background: white;
             padding: 20px;
-            background-color: black;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .discord {
+            margin-top: 15px;
+            font-size: 24px;
+        }
+        .discord a {
+            color: #5865F2;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
-    <div class="navbar">
-        <div class="logo">
-            <a href="https://imgbb.com/"><img src="https://i.ibb.co.com/xtQ1B7pn/logo-png.png" alt="logo-png" border="0"></a>
-            <span>Jual&Beli Game</span>
+    <header>
+        <div class="profile">
+            <a href="https://imgbb.com/"><img src="https://i.ibb.co.com/DDStB1hy/logo-png.png" alt="logo-png" border="0"></a>
         </div>
-        <div class="nav-links">
-            <a href="#">Beranda</a>
-            <a href="#info">Informasi</a>
-            <a href="https://discord.gg/dSK3bUAUPE">Discord</a>
+        <h1>JUBEGAMES</h1>
+    </header>
+    
+    <section class="content">
+        <p>Selamat datang di <strong>JUBEGAMES</strong>!</p>
+        <p>Platform terbaik untuk mencari akun dan mata uang game favorit Anda! Kami telah mengkategorikan semua produk dengan rapi agar Anda dapat menemukannya dengan mudah dan cepat. Tempat ini dirancang khusus bagi para gamer yang ingin mendapatkan akun atau mata uang game dengan aman, terpercaya, dan harga terbaik.</p>
+        <div class="discord">
+            <a href="https://discord.gg/dSK3bUAUPE" target="_blank">
+                <i class="fa-brands fa-discord"></i> Bergabung ke Discord
+            </a>
         </div>
-    </div>
+    </section>
 
-    <div class="hero">
-        <h1>Tempat Terbaik untuk Jual & Beli Game</h1>
-        <p>Dapatkan Akun yang anda inginkan dan dapatkan juga mata uang yang anda butuhkan</p>
-    </div>
-
-    <div class="info-section" id="info">
-        <h2>Daftar Game & Layanan</h2>
-        <div class="game-category">
-            <h3>🔥 Jual Beli Akun & Item Game</h3>
-            <ul class="game-list">
-                <li>Roblox</li>
-                <li>Mobile Legends: Bang Bang</li>
-                <li>Free Fire</li>
-                <li>Clash of Clans</li>
-                <li>Fortnite</li>
-                <li>Genshin Impact</li>
-                <li>PUBG</li>
-            </ul>
-            <h3>💠 Lapak Jualan</h3>
-            <ul class="game-list">
-                <li>Information untuk Lapak Jualan</li>
-                <li>Roblox</li>
-                <li>Mobile Legends: Bang Bang</li>
-                <li>Free Fire</li>
-                <li>PUBG</li>
-                <li>Valorant</li>
-                <li>FIFA Mobile</li>
-                <li>Genshin Impact</li>
-            </ul>
-            <h3>🚀 Fitur Di Discord</h3>
-            <ul class="game-list">
-                <li>Private Threads</li>
-                <li>Sistem Rating</li>
-                <li>Member bisa membuat post untuk mencari item</li>
+    <section class="content">
+        <h2>📢 Server Discord: Jual & Beli Games 🎮</h2>
+        <p>Selamat datang di <strong>JUBEGAMES</strong>, tempat terbaik untuk <strong>jual beli akun & mata uang game</strong> dengan aman dan terpercaya! 🚀</p>
+        <h3>🛒 Fitur Utama:</h3>
+        <ul>
+            <li>✅ <strong>Jual & Beli Akun Game</strong> (FF, ML, Roblox, dll.)</li>
+            <li>✅ <strong>Jual & Beli Mata Uang Game</strong> (Diamond, Robux, UC, dll.)</li>
+            <li>✅ <strong>Sistem Ticket Transaksi Aman 🎟️</strong></li>
+            <li>✅ <strong>Kategori Game Lengkap</strong> – Tambahkan game baru jika belum tersedia!</li>
+            <li>✅ <strong>Role Khusus untuk Pedagang & Pembeli</strong></li>
+            <li>✅ <strong>Promosi & Event Menarik untuk Member!</strong></li>
+        </ul>
+        <h3>📢 Peraturan Penting:</h3>
+        <ul>
+            <li>⚠ <strong>Dilarang melakukan scam</strong> – Jika ada yang menipu, laporkan ke admin!</li>
+            <li>⚠ <strong>Jual akun/mata uang sesuai kategori</strong> – Jangan jual di channel yang salah!</li>
+            <li>⚠ <strong>Saling menghormati antar member & admin</strong> – Hindari konflik!</li>
+            <li>⚠ <strong>Dilarang menyebarkan konten 18+ atau link mencurigakan!</strong></li>
+        </ul>
+        <h3>📢 Ingin jadi Pedagang Resmi?</h3>
+        <p>Ajukan role dengan format yang telah disediakan di channel request role!</p>
+        <p><strong>Jadilah bagian dari komunitas jual beli game yang aman & nyaman! 🚀🔥</strong></p>
+    </section>
+    <section class="content">
+        <h2>📢 Jual & Beli Akun Game 🎮</h2>
+        <div class="category">
+            <h2>JUAL BELI AKUN</h2>
+            <ul>
+                <li>🔹 Roblox</li>
+                <li>🔹 Mobile Legends: Bang Bang</li>
+                <li>🔹 Free Fire</li>
+                <li>🔹 Clash of Clans</li>
+                <li>🔹 Fortnite</li>
+                <li>🔹 Genshin Impact</li>
+                <li>🔹 PUBG</li>
             </ul>
         </div>
-        <p class="note">Catatan:Jika game yang anda cari tidak ada di list tersebut bisa req gane di dalam discord.</p>
-    </div>
-    <div class="footer">
-        <p>Gabung di Discord kami: <a href="https://discord.gg/dSK3bUAUPE" style="color: #ff9800;">Klik di sini</a></p>
-    </div>
+
+        <div class="category">
+            <h2>Lapak Jualan</h2>
+                <li>🔹 Roblox</li>
+                <li>🔹 Mobile Legends: Bang Bang</li>
+                <li>🔹 Free Fire</li>
+                <li>🔹 PUBG</li>
+                <li>🔹 Valorant</li>
+                <li>🔹 FIFA Mobile</li>
+                <li>🔹 Genshin Impact</li>
+
+
+                <p>Silakan request game jika tidak tersedia dalam daftar tersebut di server kami. Kami akan menambahkannya sesuai permintaan! 🚀🎮<p>
+            </ul>
+        </div>
+    </section>
 </body>
 </html>
